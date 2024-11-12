@@ -1,0 +1,245 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación fija */
+header {
+    background-color: rgba(0, 70, 27, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 1000;
+    transition: font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 18px;
+}
+
+nav ul li.logo a {
+    font-size: 3.8rem;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    padding-right: 40px;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Sección de la misión */
+.mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 100px; 
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.mission-text {
+    width: 60%;
+    color: #333;
+}
+
+.mission-text h1 {
+    font-size: 98px;
+    color: #8b4c39;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+
+.mission-text p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.mission-image {
+    width: 35%;
+}
+
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+    /* Aplica la animación de flotación */
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Sección de Equipo */
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+
+.team-section h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 250px;
+    height: 200px;
+    object-fit: scale-down; /* Escala la imagen para que encaje sin recortarla */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.team-member h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #777;
+}
+/* Sección del Focus Group */
+.focus-group-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+/* Sección general que contiene el focus group */
+.focus-group-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo del título */
+.focus-group-section h2 { 
+    font-size: 4em;
+    color: #a76666;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del video */
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo del video */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.social-footer {
+    background-color: #101111;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+.social-stats a {
+    color: #c6c6ed;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff7f7;
+}
+
+.social-media .icons {
+    margin-top: 10px;
+}
+
+.social-media .icons a {
+    margin: 0 10px;
+}
+
+.social-media .icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media .icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #f6f0f0;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
